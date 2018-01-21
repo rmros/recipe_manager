@@ -14,14 +14,14 @@ default: &default
 
 development:
   <<: *default
-  database: tddrails_development
+  database: recipe_manager_full_development
 
 test: &test
   <<: *default
-  database: tddrails_test
+  database: recipe_manager_full_test
 
 production:
   <<: *default
-  database: tddrails_production
+  database: recipe_manager_full_production
 cucumber:
   <<: *test
